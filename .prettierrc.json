@@ -1,0 +1,31 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "endOfLine": "lf",
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "import/order": [
+    "error",
+    {
+      "groups": ["builtin", "external", "internal"],
+      "pathGroups": [
+        {
+          "pattern": "react",
+          "group": "external",
+          "position": "before"
+        }
+      ],
+      "pathGroupsExcludedImportTypes": ["react"],
+      "newlines-between": "always",
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
+      }
+    }
+  ]
+}
